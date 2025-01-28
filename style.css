@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* left side and right side padding 150px */
 * {
   margin: 0;
   padding: 0;
@@ -105,4 +106,88 @@ nav .search-login-container {
   justify-content: center;
   align-items: center;
   background-color: aqua;
+}
+
+
+/* customer support start */
+.customer-support{
+    z-index: -1;
+    background-color: #FCFCFD;
+    /* margin: 50px 150px; */
+    margin: 200px 150px;
+    border: 1px solid #E9ECF5;
+    position: relative;
+    border-radius: 50px;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.heading .heading-image{
+    position: absolute;
+    width: 400px;
+    height: auto;
+    top: -150px;
+}
+.heading p{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+}
+.heading span{
+    color: #1A71F5;
+}
+.customer-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0px;
+}
+.support-card{
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #E9ECF5;
+    border-radius: 20px;
+    background-color: #FCFCFD;
+    height: auto;
+    padding: 20px;
+}
+.support-card:hover{
+    border-color: #1A71F5;
+    background-color: #F1F5FD;
+}
+.support-card img{
+  width: 75px;
+}
+.support-card p{
+  margin-top: 10px;
+  font-size: large;
+  font-weight: 500;
+}
+.support-card .discription{
+  color: #5D6B98;
+  font-size: 15px;
+}
+.customer-support-image-section{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 35px;
+  position: relative;
+}
+.support-image{
+  width: 100%;
+  border: 1px solid #E9ECF5;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.flying-image{
+  width: 400px;
+  position: absolute;
+  bottom: -150px;
+  left: 80px;
 }
