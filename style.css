@@ -34,11 +34,11 @@ nav > div > ul {
 }
 
 nav > div > ul > li {
-  font-size: 12px;
+  font-size: 11px;
   display: flex;
   align-items: center;
   color: #344055;
-  gap: 5px;
+  gap: 10px;
 }
 .fa-chevron-down {
   font-size: 8px;
@@ -58,18 +58,56 @@ nav .search-login-container {
 }
 
 .search-container {
-    background-color: #f0ebea;
-    
+  background-color: #f8fcff9c;
+  padding: 7px 10px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.fa-magnifying-glass{
+  font-size: 11px;
+  color: #9f9fa0;
+  margin-right: 10px;
 }
 
+.command-container{
+  font-size: 8px;
+  background-color: #fffffff3;
+  padding: 3px 7px;
+  border-radius: 6px;
+  color: #7a7777;
+  font-weight: 600;
+}
 .search-container input {
     border: none;
     color: #000;
     font-size: 11px;
     outline: none;
+    background-color: transparent;
 }
 .search-container input::placeholder {
     color: #4E5674;
+}
+
+.login-btn{
+  background-color: transparent;
+  border: none;
+  color: #2b2a2a;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.get-started-btn{
+  border: none;
+  background-color: #fff;
+  padding: 7px 15px;
+  border-radius: 11px;
+  font-size: 11px;
+  color: #2b2a2a;
+  font-weight: 500;
+
 }
 .hero-section{
     background: #B9DEFF;
@@ -102,6 +140,10 @@ nav .search-login-container {
     overflow-x: hidden;
     right: 0;
 }
+
+
+
+/* --Workshop-- */
 .workshop {
   display: flex;
   justify-content: center;
