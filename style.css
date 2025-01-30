@@ -21,6 +21,7 @@ nav {
   position: fixed;
   letter-spacing: -0.03em;
   font-weight: 500;
+  z-index: 999;
 }
 
 nav > div > ul {
