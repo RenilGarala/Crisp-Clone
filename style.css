@@ -204,8 +204,12 @@ nav .search-login-container {
     font-weight: bold;
 }
 
-.heading p{
+.heading-para{
+  color: #3b4767;
   font-size: 10px;
+  line-height: 26px;
+  margin-top: 22px;
+  text-align: center;
 }
 
 
