@@ -5,27 +5,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Poppins, sans-serif;
-}
-
-body{
+  font-family: Arial, sans-serif;
 }
 .container {
   height: 100vw;
-  width: 98vw;
-  
-  background-color: #B9DEFF;
+  width: 100vw;
+  background: linear-gradient(to bottom, #B9DEFF, #ffffff);
 }
 
 nav {
+  width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 15px 80px;
+  justify-content: space-between;
+  padding: 15px 150px;
   position: fixed;
   letter-spacing: -0.03em;
   font-weight: 500;
-  z-index: 999;
+  z-index: 1000;
+  background-color: #ffffffe7;
 }
 
 
@@ -39,7 +37,7 @@ nav > div > ul {
 }
 
 nav > div > ul > li {
-  font-size: 11px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   color: #344055;
@@ -51,7 +49,6 @@ nav > div > ul > li {
 
 nav > div > img {
   width: 75px;
-  margin-left: 60px;
 }
 
 nav .search-login-container {
@@ -64,12 +61,13 @@ nav .search-login-container {
 
 .search-container {
   background-color: #f8fcff9c;
-  padding: 7px 10px;
+  padding: 15px 20px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0.1, 0.1);
 }
 .fa-magnifying-glass{
   font-size: 11px;
@@ -85,10 +83,14 @@ nav .search-login-container {
   color: #7a7777;
   font-weight: 600;
 }
+.search-container{
+  border: 1px solid #E9ECF5;
+
+}
 .search-container input {
     border: none;
-    color: #000;
-    font-size: 11px;
+    color: #5D6B98;
+    font-size: 13px;
     outline: none;
     background-color: transparent;
 }
@@ -99,26 +101,31 @@ nav .search-login-container {
 .login-btn{
   background-color: transparent;
   border: none;
-  color: #2b2a2a;
-  font-size: 12px;
+  color: #000000;
+  font-size: 14px;
   font-weight: 500;
+}
+.login-btn:hover{
+  cursor: pointer;
 }
 
 .get-started-btn{
   border: none;
-  background-color: #fff;
-  padding: 7px 15px;
+  background-color: #000000;
+  padding: 10px 20px;
   border-radius: 11px;
-  font-size: 11px;
-  color: #2b2a2a;
+  font-size: 14px;
+  color: #ffffff;
   font-weight: 500;
-
+}
+.get-started-btn:hover{
+  cursor: pointer;
 }
 
 /* -- Hero section -- */
 .hero-section{
     background: #B9DEFF;
-    height: 40%;
+    height: 54%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,18 +142,17 @@ nav .search-login-container {
 }
 
 .tree{
-    bottom: -24%;
+    bottom: -13%;
     position: absolute;
     left: 0;
 }
-
 .tree img{
-    width: 77%;
+    width: 700px;
 }
 
 .right-building img{
-    width: 420px;
-    bottom: -24%;
+    width: 650px;
+    bottom: -13%;
     position: absolute;
     overflow-x: hidden;
     right: 0;
@@ -158,12 +164,13 @@ nav .search-login-container {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: -140px;
 }
 
 .new-message{
-  font-size: 11px;
+  font-size: 15px;
   background-color: #599ef943;
-  padding: 6px 8px;
+  padding: 7px 10px;
   border-radius: 55px;
   border: 1px solid#0971f9;
   color: #1972F5;
@@ -184,47 +191,56 @@ nav .search-login-container {
 .new-message span{
   background-color: #1972F5;
   color: #fff;
-  padding: 2px 7px;
+  padding: 5px 7px;
   border-radius: 55px;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .new-message i {
   font-size: 9px;
 }
 
-.heading h1{
-  width: 40%;
+.heading-title{
+  width: 60%;
   text-align: center;
   background: #0f1e35 linear-gradient(#91dcf752, #91dcf726);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 38px;
+  font-size: 50px;
   letter-spacing: -1.2px;
   line-height: 56px;
-  margin-top: -40px;
+  margin-top: -20px;
   font-weight: bold;
 }
 
 .heading-para{
+  width: 60%;
   color: #3b4767;
-  font-size: 10px;
+  font-size: 17px;
   line-height: 26px;
-  margin-top: 22px;
+  margin-top: 30px;
   text-align: center;
+  font-weight: 500;
+}
+.heading-link{
+  margin-top: 45px;
+}
+.crisp-free-link{
+  text-decoration: none;
+  background: #0f1e35 linear-gradient(#283145, #051028);
+  border: 2px solid #051028;
+  padding: 10px 20px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.free-commitment{
+  margin-top: 25px;
+  font-weight: 100;
+  font-size: 14px;
 }
 
-
-
-
-/* --Workshop-- */
-.workshop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: aqua;
-}
 
 
 /* customer support start */
@@ -252,7 +268,8 @@ nav .search-login-container {
 .heading p{
     font-size: 35px;
     text-align: center;
-    font-weight: 500;
+    color: #334055;
+    margin: 20px 0px;
 }
 .heading span{
     color: #1A71F5;
@@ -303,16 +320,15 @@ nav .search-login-container {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .flying-image{
-  width: 400px;
+  width: 350px;
   position: absolute;
-  bottom: -150px;
-  left: 80px;
+  bottom: -140px;
+  left: 70px;
 }
 
 /*common-testimonial start */
 .testimonials{
-  z-index: -1;
-  margin: 200px 150px;
+  margin: 200px 150px 150px 150px;
   margin-top: 230px;
 }
 .testimonials-heading{
@@ -321,9 +337,9 @@ nav .search-login-container {
   align-items: center;
   gap: 25px;
   text-align: center;
-  color: #000000;
+  color: #334055;
   margin: 60px 0px;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 600;
 }
 .testimonials-heading a{
@@ -361,11 +377,11 @@ nav .search-login-container {
   overflow: hidden;
   min-height: 400px;
 }
-/* photo not fit issue */
 .testimonials-image{
   width: 100%;
   height: 100%;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .card-testimonial .rating{
@@ -493,15 +509,24 @@ nav .search-login-container {
 .right{
   width: 50%;
   position: relative;
+  display: flex;
+  align-items: end;
 }
 .image-1{
 position: absolute;
 top: -60px;
 }
 .image-2{
-width: 100%;
-height: 100%;
+width: 80%;
+height: 80%;
 object-fit: cover;
+
+}
+.image-3{
+  position: absolute;
+  height: 400px;
+  right: 20px;
+  bottom: -100px;
 }
 /* <demo section end  */
 
@@ -509,12 +534,6 @@ object-fit: cover;
 
 /* footer section start */
 footer {
-  /* display: flex;
-  justify-content: space-around;
-  align-items: start;
-  width: 80vw;
-  margin: auto;
-  padding-block: 10vh 10vh; */
   display: flex;
   justify-content: space-around;
   align-items: start;
@@ -524,6 +543,9 @@ footer {
   border-bottom: 2px solid #DCDFEA;
   margin-top: 120px;
 }
+.footer-links a{
+  font-size: 15px;
+}
 
 footer ul {
   list-style-type: none;
@@ -531,7 +553,7 @@ footer ul {
 
 footer li {
   padding-block: 1vh;
-  padding: 7px;
+  padding: 5px 10px;
   border-radius: 8px;
 }
 
@@ -544,7 +566,7 @@ footer li:hover {
   -o-transition: 0.2s linear;
 }
 .f-logo{
-  width: 100px;
+  width: 80px;
 }
 .f-head:hover{
   background-color: transparent;
@@ -557,10 +579,12 @@ footer li:hover {
   background-color: transparent;
 }
 footer a {
-  color: black;
+  color: #334055;
   text-decoration: none;
 }
-
+.f-head {
+  margin-bottom: 5px;
+}
 footer .f-head a {
   color: #293247cc;
   font-weight: bolder;
@@ -568,7 +592,7 @@ footer .f-head a {
 
 footer i {
   padding-right: 1vw;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 footer select {
@@ -579,7 +603,8 @@ footer select {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  font-size: 1.1em;
+  font-size: 0.9em;
+  color: #667085;
   margin-block: 2vh 4vh;
 }
 
